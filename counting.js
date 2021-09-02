@@ -11,7 +11,8 @@ function loop() {
   console.log(counter);
   counter++;
   arr.unshift(counter);
-  arr.length = 9;
-  console.log(arr);
-  setTimeout(loop, 1000);
+  if (arr.length < 9) {
+    setTimeout(loop, 1000);
+    console.log(arr);
+  }
 }

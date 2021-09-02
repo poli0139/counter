@@ -13,7 +13,7 @@ console.log(people);
 const str = "abcdefghij";
 const arr1 = str.split();
 const arr2 = Array.from(str);
-const arr3 = arr2.toString();
+const arr3 = arr2.join("");
 console.log(arr1);
 console.log(arr2);
 console.log(arr3);
